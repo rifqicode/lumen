@@ -11,8 +11,5 @@
 |
 */
 
-$router->group(['prefix' => 'admin'] , function () use ($router) {
-
-    $router->get('user/{id}', 'UserController@show');
-
-});
+$router->get('/', 'UserController@index');
+$router->get('user/{id}', 'UserController@show');

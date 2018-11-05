@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use DB;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -17,6 +17,10 @@ class UserController extends Controller
         // code
     }
 
+    public function index()
+    {
+      return 'HELLO WORLD';
+    }
 
     public function show($id = null)
     {
